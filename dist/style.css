@@ -1,0 +1,154 @@
+body {
+  width: 700px;
+}
+
+.container-1 {
+  justify-content: space-between;
+  width: 90%;
+  height: 60px;
+  padding-bottom: 10px;
+  display: flex;
+}
+
+.container-1 .box-darken-1 {
+  background-color: #c00;
+  border-radius: 7px;
+}
+
+.container-1 .box-lighten-1 {
+  background-color: red;
+  border-radius: 7px;
+}
+
+.container-1 .box-darken-2 {
+  background-color: #900;
+  border-radius: 7px;
+}
+
+.container-1 .box-lighten-2 {
+  background-color: red;
+  border-radius: 7px;
+}
+
+.container-1 .box-darken-3 {
+  background-color: #600;
+  border-radius: 7px;
+}
+
+.container-1 .box-lighten-3 {
+  background-color: red;
+  border-radius: 7px;
+}
+
+.container-1 .box-darken-4 {
+  background-color: #300;
+  border-radius: 7px;
+}
+
+.container-1 .box-lighten-4, .container-1 .box-base-color {
+  background-color: red;
+  border-radius: 7px;
+}
+
+.container-2 {
+  justify-content: space-between;
+  width: 90%;
+  height: 60px;
+  padding-bottom: 10px;
+  display: flex;
+}
+
+.container-2 .box-darken-1 {
+  background-color: #00c;
+  border-radius: 7px;
+}
+
+.container-2 .box-lighten-1 {
+  background-color: #00f;
+  border-radius: 7px;
+}
+
+.container-2 .box-darken-2 {
+  background-color: #009;
+  border-radius: 7px;
+}
+
+.container-2 .box-lighten-2 {
+  background-color: #00f;
+  border-radius: 7px;
+}
+
+.container-2 .box-darken-3 {
+  background-color: #006;
+  border-radius: 7px;
+}
+
+.container-2 .box-lighten-3 {
+  background-color: #00f;
+  border-radius: 7px;
+}
+
+.container-2 .box-darken-4 {
+  background-color: #003;
+  border-radius: 7px;
+}
+
+.container-2 .box-lighten-4, .container-2 .box-base-color {
+  background-color: #00f;
+  border-radius: 7px;
+}
+
+.container-3 {
+  justify-content: space-between;
+  width: 90%;
+  height: 60px;
+  padding-bottom: 50px;
+  display: flex;
+}
+
+.container-3 .box-darken-1 {
+  background-color: #037003;
+  border-radius: 7px;
+}
+
+.container-3 .box-lighten-1 {
+  background-color: #03d603;
+}
+
+.container-3 .box-darken-2 {
+  background-color: #033d03;
+  border-radius: 7px;
+}
+
+.container-3 .box-lighten-2 {
+  background-color: #03ff03;
+}
+
+.container-3 .box-darken-3 {
+  background-color: #030a03;
+  border-radius: 7px;
+}
+
+.container-3 .box-lighten-3 {
+  background-color: #03ff03;
+}
+
+.container-3 .box-darken-4 {
+  background-color: #030303;
+  border-radius: 7px;
+}
+
+.container-3 .box-lighten-4 {
+  background-color: #03ff03;
+}
+
+.container-3 .box-base-color {
+  background-color: #03a303;
+  border-radius: 7px;
+}
+
+span {
+  color: #fafafa;
+}
+
+/*# sourceMappingURL=style.css.map */

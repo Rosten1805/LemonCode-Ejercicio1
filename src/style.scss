@@ -1,0 +1,105 @@
+body {
+    width: 700px;
+}
+
+@mixin color ($size:hwb(0 0% 0%) ){
+    background-color: $size;
+}
+@mixin color1 ($size: hwb(240 0% 0%)  ){
+    background-color: $size;
+}
+@mixin color2 ($size: hwb(120 1% 36%) ){
+    background-color: $size;
+}
+
+.container-1{
+    display: grid;
+    display: flex;
+    padding-bottom: 10px;
+    height: 60px;
+    width: 90%;
+    justify-content: space-between;
+    $i: 1;
+    $mas : 0;
+    $men : 0;
+
+    @while $i <= 4 {
+    .box-darken-#{$i}{
+        $mas : $mas  + 20;    
+        @include color(hwb(0 0% 0% + $mas));
+        border-radius: 7px;
+        
+    }
+        .box-lighten-#{$i}{
+            $men : $men  - 20;    
+            @include color(hwb(0 0% 0% + $men));
+            border-radius: 7px;
+            }
+        $i: $i + 1;
+    }
+    .box-base-color{
+        @include color();
+        border-radius: 7px;
+    }
+}
+
+.container-2{
+    display: grid;
+    display: flex;
+    padding-bottom: 10px;
+    height: 60px;
+    width: 90%;
+    justify-content: space-between;
+    $i: 1;
+    $mas : 0;
+    $men : 0;
+
+    @while $i <= 4 {
+    .box-darken-#{$i}{
+        $mas : $mas  + 20;    
+        @include color1(hwb(240 0% 0% + $mas));
+        border-radius: 7px;
+        }
+        .box-lighten-#{$i}{
+            $men : $men  - 20;    
+            @include color1(hwb(240 0% 0% + $men));
+            border-radius: 7px;
+            }
+        $i: $i + 1;
+    }
+    .box-base-color{
+        @include color1();
+        border-radius: 7px;
+    }
+}
+.container-3{
+    display: grid;
+    display: flex;
+    padding-bottom: 50px;
+    height: 60px;
+    width: 90%;
+    justify-content: space-between;
+    $i: 1;
+    $mas : 0;
+    $men : 0;
+
+    @while $i <= 4 {
+    .box-darken-#{$i}{
+        $mas : $mas  + 20;    
+        @include color2(hwb(120 1% 36% + $mas));
+        border-radius: 7px;
+        }
+        .box-lighten-#{$i}{
+            $men : $men  - 20;    
+            @include color2(hwb(120 1% 36% + $men));
+            }
+        $i: $i + 1;
+    }
+    .box-base-color{
+        @include color2();
+        border-radius: 7px;
+    }
+}
+span{
+    color: rgb(250, 250, 250);
+}
